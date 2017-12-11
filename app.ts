@@ -91,3 +91,44 @@ let complex2:Complex = {
         return this.data;
     }
 }
+
+//union type
+let myRealRealAge: number | string = 27;
+myRealRealAge = "35";
+
+//check types;
+let finalValue = "A string";
+if (typeof finalValue == "string") {
+    console.log("finalvalue is  string!");  
+}
+
+// never 
+function naverReturn(): never {
+    throw new Error('An error');
+}
+
+//Nullable Types 
+let canNullable: number | null = 12;
+canNullable = null;
+let canAlsoBeNull = null;
+canAlsoBeNull = 213;
+
+
+//practice
+type BankAccount = {money:number, deposit:(value:number)=> void};
+
+let bankAccount:BankAccount = {
+    money:2000,
+    deposit(value: number) {
+        this.money += value;
+    }
+};
+
+let myself:{ name: string, bankAccount:BankAccount , hobbies: string[]} = {
+    name: "Kyeongho",
+    bankAccount: bankAccount,
+    hobbies: ["Sport", "Cooking"] 
+};
+
+myself.bankAccount.deposit(3000);
+console.log(myself);

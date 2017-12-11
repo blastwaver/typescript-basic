@@ -45,7 +45,44 @@ function multiply(value1, value2) {
 console.log(multiply(2, 10));
 //function types
 var myMultiply;
-myMultiply = sayHello;
-myMultiply();
+// myMultiply = sayHello;
+// myMultiply();
 myMultiply = multiply;
 myMultiply(12, 23);
+//object
+var userData = {
+    name: 'Kyrongho',
+    age: 27
+};
+// userData = {a:"s", b:23};
+userData = { name: "s", age: 23 };
+//complex object 
+var complex = {
+    data: [100, 200, 333],
+    output: function (all) {
+        return this.data;
+    }
+};
+var complex2 = {
+    data: [100, 200, 333],
+    output: function (all) {
+        return this.data;
+    }
+};
+//union type
+var myRealRealAge = 27;
+myRealRealAge = "35";
+//check types;
+var finalValue = "A string";
+if (typeof finalValue == "string") {
+    console.log("finalvalue is  string!");
+}
+// never 
+function naverReturn() {
+    throw new Error('An error');
+}
+//Nullable Types 
+var canNullable = 12;
+canNullable = null;
+var canAlsoBeNull = null;
+canAlsoBeNull = 213;
