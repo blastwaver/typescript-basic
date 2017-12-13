@@ -1,3 +1,4 @@
+
 //string
 let myName: string = 'Kyeongho';
 
@@ -132,3 +133,15 @@ let myself:{ name: string, bankAccount:BankAccount , hobbies: string[]} = {
 
 myself.bankAccount.deposit(3000);
 console.log(myself);
+
+
+let aaa = "sss";
+
+let sdfsdf = function () {
+    // console.log(aaa);
+    let aaa ="222";
+
+   console.log(aaa);
+}
+
+sdfsdf();

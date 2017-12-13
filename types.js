@@ -86,3 +86,23 @@ var canNullable = 12;
 canNullable = null;
 var canAlsoBeNull = null;
 canAlsoBeNull = 213;
+var bankAccount = {
+    money: 2000,
+    deposit: function (value) {
+        this.money += value;
+    }
+};
+var myself = {
+    name: "Kyeongho",
+    bankAccount: bankAccount,
+    hobbies: ["Sport", "Cooking"]
+};
+myself.bankAccount.deposit(3000);
+console.log(myself);
+var aaa = "sss";
+var sdfsdf = function () {
+    // console.log(aaa);
+    var aaa = "222";
+    console.log(aaa);
+};
+sdfsdf();
