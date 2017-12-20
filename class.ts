@@ -163,3 +163,6 @@ const rectangle = new Rectangle();
 rectangle.width = 5;
 rectangle.length = 10;
 console.log(rectangle.calSize());
+
+//excercise3 
+
